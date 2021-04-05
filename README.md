@@ -1,4 +1,6 @@
 # webflux-redis-example
+[![Build](https://github.com/gregwhitaker/webflux-redis-example/actions/workflows/gradle.yml/badge.svg)](https://github.com/gregwhitaker/webflux-redis-example/actions/workflows/gradle.yml)
+
 Example of retrieving data from [Redis](https://redis.io/) in a [Spring WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html) application.
 
 ## Building the Example
