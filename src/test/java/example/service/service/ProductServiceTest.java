@@ -37,4 +37,18 @@ class ProductServiceTest {
 
     verify(repository).findOne("missing-product");
   }
+
+  @Test
+  void repositoryErrorPropagatesWithoutWrapping() {
+    RuntimeException failure = new RuntimeException("Repository lookup failed");
+    ProductRepository repository = mock(ProductRepository.class);
+    when(repository.findOne("failed-product")).thenReturn(Mono.error(failure));
+    ProductService service = new ProductService(repository);
+
+    StepVerifier.create(service.getProduct("failed-product"))
+        .expectErrorMatches(error -> error == failure)
+        .verify();
+
+    verify(repository).findOne("failed-product");
+  }
 }
