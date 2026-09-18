@@ -11,7 +11,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
- * Tests for the ProductService.
+ * Tests added by replicant.
  */
 class ProductServiceTest {
 
