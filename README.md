@@ -3,6 +3,9 @@
 
 Example of retrieving data from [Redis](https://redis.io/) in a [Spring WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html) application.
 
+## Prerequisites
+To follow the commands below, you need a Java 11 JDK for the Gradle build, Docker Compose for the local Redis instance started by `bootRunLocal`, and `curl` for the request example. The checked-in Gradle wrapper (`./gradlew`) is used for Gradle commands.
+
 ## Building the Example
 Run the following command to build the example application:
 
