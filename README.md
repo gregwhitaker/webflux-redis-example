@@ -19,6 +19,8 @@ Follow the steps below to run the example:
 
         curl "http://localhost:8080/products/1"
 
+    This sends `GET /products/1` to retrieve the product with ID `1`.
+
     If successful, you will see the following response in the terminal:
 
          {"id":"1","name":"Product1","description":"Product1 Description","active":true,"start_date":"2021-01-01T00:00Z","end_date":"2021-01-31T00:00Z"}
