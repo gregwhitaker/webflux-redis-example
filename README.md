@@ -15,7 +15,7 @@ Follow the steps below to run the example:
 
         ./gradlew bootRunLocal
 
-    The local Redis configuration is defined in `docker/docker-compose.yml`.
+    The local Redis configuration, including its port mapping, is defined in `docker/docker-compose.yml`.
 
 2. In a terminal run the following command to call the service and retrieve data for a product:
 
