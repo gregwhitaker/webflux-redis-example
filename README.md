@@ -8,6 +8,8 @@ Run the following command to build the example application:
 
     ./gradlew clean build
 
+Successful builds create a JAR in build/libs.
+
 ## Running the Example
 Follow the steps below to run the example:
 
